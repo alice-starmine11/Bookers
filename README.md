@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+DMM WEBCAMPの学習コンテンツ『アプリケーションを完成させよう』の研修課題です。
+PCのブラウザで実行可能です。
