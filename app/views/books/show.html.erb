@@ -1,12 +1,21 @@
-<div>
-  <%= flash[:notice] %>
+<div class="messege">
+  <p id="notice">
+    <%= notice %>
+  </p>
 </div>
 
-<h2>Title</h1>
-<p><%= @book.title %></p>
+<p>
+  <span>Title: </span><%= @book.title %>
+</p>
 
-<h2>Body</h2>
-<P><%= @book.body %></P>
 
-<%= link_to "Edit", edit_book_path(@book.id) %>
-<%= link_to "Destroy", book_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %>
+<p>
+  <span>Body: </span><%= @book.body %>
+</p>
+
+<div class="link">
+    <%= link_to "Edit", edit_book_path(@book.id) %>
+    <%= "  |  " %>
+    <%= link_to "Back", books_path %>
+</div>
+
